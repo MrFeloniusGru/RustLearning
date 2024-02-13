@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "guessing_game",
+            "type": "lldb",
+            "program": "${workspaceRoot}/guessing_game/target/debug/guessing_game",
+            "cwd": "${workspaceRoot}/guessing_game",
+            "request": "launch",
+            "sourceLanguages": ["rust"],
+            "cargo": {
+                "args": [
+                    "build",
+                    "--manifest-path=${workspaceFolder}/guessing_game/Cargo.toml"
+                ]
+            }
+        }
+    ]
+}
